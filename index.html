@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Willie Xie Design Portfolio">
+    <meta name="description" content="Willie Xie Design Portfolio">
+    <title>WX</title>
+    <link rel="icon" href="img/Asset 1.svg">
+    <!-- CSS FILES -->
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+</head>
+
+<body class="loading">
+<div class="navbar">
+<!--<a href="index.html"><div style="position: fixed; top: 33px; left: 35px;z-index: 1020"><h1 style="display: inline;">WILLIE</h1> <h2 style="display: inline">XIE</h2></div></a>-->
+<input id="burger" type="checkbox" />
+
+<label for="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+
+<nav>    
+  <ul>
+    <li><a href="/" class="checked">PRODUCT</a></li>
+    <li><a href="/digital">DIGITAL</a></li>
+    <li><a href="/about" style="padding-bottom: 40%;">ABOUT</a></li>
+    <a href="tel:+8613122324885"><img src="img/Asset%202.svg" style="height: 20px"></a>
+      <a href="mailto:xie.willie@gmail.com"><img src="img/Asset%201.svg" style="height: 20px"></a>
+      <a href="https://www.linkedin.com/in/williexie"><img src="img/Asset%203.svg" style="height: 20px"></a>
+  </ul>
+</nav>
+ 
+
+
+<div class="topnav">
+  <a class="active" href="\">Tangible</a>
+  <a href="\digital">Digital</a>
+  <a href="\about">About</a>
+  
+</div></div>
+
+
+   <div id="barba-wrapper" class="wrapper">
+   <div class="barba-container">
+    <div id="fullpage">
+       
+        <div class="section active" >
+            <div class="project">
+                <a href="#" class="projectthmb">
+               
+                </a>
+               
+
+
+            </div>
+
+
+        </div>
+        
+        <div class="section">
+            <div class="project">
+                <a href="#" class="projectthmb2">
+                <img class="fitimg" src="img/Group%204.png">
+                </a>
+               
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="project">
+                <a href="about.html" class="projectthmb3">
+                <img class="fitimg" src="img/Group%204.png">
+                </a>
+                
+            </div>
+        </div>
+        <div class="section">
+            <div class="project">
+                <a href="#" class="projectthmb4">
+                <img class="fitimg" src="img/Group%204.png">
+                </a>
+                
+            </div>
+        </div>
+        <div class="section">
+            <div class="project">
+                <a href="#" class="projectthmb5">
+                <img class="fitimg" src="img/Group%204.png">
+                </a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="project">
+                <a href="#" class="projectthmb6">
+                <img class="fitimg" src="img/Group%204.png">
+                </a>
+            </div>
+        </div>
+    
+    </div>
+    
+    
+<div class="projecttext"><h1>
+                    XPOWER </h1>
+                    <div style="margin-top: -10px"><h2>Office</h2></div>
+                </div>
+    <div class="projecttext2"><h1>
+                    XPOWER</h1>
+                    <div style="margin-top: -15px"><h2>Home </h2></div>
+                </div>
+    <div class="projecttext3"><h1>
+                    XPOWER Desk Station</h1>
+                    <div style="margin-top: -15px"><h2>| Product | Packaging </h2></div>
+                </div>
+    <div class="projecttext4"><h1>
+                    Drift Camera Wrist Mount</h1>
+                    <div style="margin-top: -15px"><h2>| Engineering | Product </h2></div>
+                </div>
+    <div class="projecttext5"><h1>
+                    Drift 'Stealth II' Packaging</h1>
+                    <div style="margin-top: -15px"><h2>| Packaging </h2></div>
+                </div>
+    <div class="projecttext6"><h1>
+                    C3 Computer Case</h1>
+                    <div style="margin-top: -15px"><h2>| Product | Simulation | Prototyping </h2></div>
+                </div>
+                </div>
+</div>
+
+
+
+
+<script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+<script src="js/barba.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.min.js"></script>
+    <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="./js/transition.js"></script>
+    
+    <script>
+    imagesLoaded( document.querySelectorAll('img'), () => {
+				document.body.classList.remove('loading');
+			});
+    </script>
+    <script>
+          $('document').ready(function(){
+            var transEffect = Barba.BaseTransition.extend({
+                start: function(){
+                  this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
+                },
+                fadeInNewcontent: function(nc) {
+                  nc.hide();
+                  var _this = this;
+                  $(this.oldContainer).fadeOut(300).promise().done(() => {
+                    nc.css('visibility','visible');
+                    nc.fadeIn(300, function(){
+                      _this.done();
+                    })
+                  });
+                }
+            });
+            Barba.Pjax.getTransition = function() {
+              return transEffect;
+            }
+            Barba.Pjax.start();
+          });
+  </script>
+    
+    <script>
+        var myFullpage = new fullpage('#fullpage', {
+            //Navigation
+            menu: '#menu',
+            lockAnchors: true,
+            anchors: ['p1', 'p2', 'p3', 'p4', 'p5','p6'],
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['Project1', 'Project2', 'Project3', 'Project4'],
+            showActiveTooltip: false,
+            slidesNavigation: false,
+            slidesNavPosition: 'bottom',
+
+            //Scrolling
+            css3: true,
+            scrollingSpeed: 700,
+            autoScrolling: true,
+            fitToSection: true,
+            fitToSectionDelay: 600,
+            scrollBar: false,
+            easing: 'easeInOutCubic',
+            easingcss3: 'ease',
+            loopBottom: false,
+            loopTop: false,
+            loopHorizontal: true,
+            continuousVertical: false,
+            continuousHorizontal: false,
+            scrollHorizontally: false,
+            interlockedSlides: false,
+            dragAndMove: false,
+            offsetSections: false,
+            resetSliders: false,
+            fadingEffect: false,
+            normalScrollElements: '#element1, .element2',
+            scrollOverflow: false,
+            scrollOverflowReset: false,
+            scrollOverflowOptions: null,
+            touchSensitivity: 6,
+            normalScrollElementTouchThreshold: 3,
+            bigSectionsDestination: null,
+
+            //Accessibility
+            keyboardScrolling: true,
+            animateAnchor: true,
+            recordHistory: false,
+
+            //Design
+            controlArrows: true,
+            verticalCentered: true,
+            sectionsColor: [],
+            fixedElements: '#header, .footer',
+            responsiveWidth: 0,
+            responsiveHeight: 0,
+            responsiveSlides: false,
+            parallax: false,
+            parallaxOptions: {
+                type: 'reveal',
+                percentage: 62,
+                property: 'translate'
+            },
+
+            //Custom selectors
+            sectionSelector: '.section',
+            slideSelector: '.slide',
+
+            lazyLoading: true,
+
+            //events
+            onLeave: function(origin, destination, direction) {},
+            afterLoad: function(origin, destination, direction) {},
+            afterRender: function() {},
+            afterResize: function(width, height) {},
+            afterResponsive: function(isResponsive) {},
+            afterSlideLoad: function(section, origin, destination, direction) {},
+            onSlideLeave: function(section, origin, destination, direction) {}
+        });
+    </script>
+<script>
+    Barba.Dispatcher.on('transitionCompleted', function () {
+      fullpage_api.destroy('all');
+
+
+}
+    </script>
+
+</body>
+
+</html>
