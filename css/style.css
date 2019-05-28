@@ -9,7 +9,7 @@ html, body {
     
 }
 
-.js .loading::before {
+.loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -20,7 +20,7 @@ html, body {
 	background: #111;
 }
 
-.js .loading::after {
+.loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
