@@ -387,7 +387,7 @@ width: 100%;
 }
 
 .projectthmb{
-    grid-column: 1 / 10;
+    grid-column: 2 / 10;
     grid-row: 3 / 8;
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
     opacity: 0.2;
@@ -584,8 +584,8 @@ transform: scale(1);
 }
     
     .projectthmb {
-    grid-column: 1 / 11;
-    grid-row: 1 / 11;
+    grid-column: 4 / 10;
+    grid-row: 3 / 10;
        display: flex;
   overflow-x: auto;
   overflow-y: hidden;
