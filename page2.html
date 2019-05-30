@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<main id="barba-wrapper">
+<main id="swup" class="transition-fade">
    
 <div class="barba-container" data-namespace="detail">
         <div class="full" style="background-image: url(img/safd.png);">
@@ -27,17 +27,21 @@
 
 
 
-
+<script>
+    sessionStorage.setItem('state', 'section3');
+    </script>
 
     <script>
 $('document').ready(function(){
      Barba.Pjax.start();
 });</script>
 
-    <script src="js/barba.min.js"></script>
+    <script src="js/swup.min.js"></script>
         <script src="js/grid.js"></script>
 
-    
+        <script>
+        const swup = new Swup();
+  </script>
      <script>
 $('document').ready(function(){
      Barba.Pjax.start();
